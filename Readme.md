@@ -12,10 +12,10 @@ uint256 public maxMintAmount = 50;
 ```
 ## Key Variables
 
-Cost: 0.005 ether - The cost for each NFT.
-Presale Cost: 0.003 ether - The cost for presale.
-Max Supply: 18 - Maximum number of NFTs in this collection (can be modified based on the collection size).
-Max Mint Amount: 50 - Maximum number of NFTs allowed per wallet.
+# Cost: 0.005 ether - The cost for each NFT.
+# Presale Cost: 0.003 ether - The cost for presale.
+# Max Supply: 18 - Maximum number of NFTs in this collection (can be modified based on the collection size).
+# Max Mint Amount: 50 - Maximum number of NFTs allowed per wallet.
 
 ## Deployment Instructions
  Set Initial Supply:
