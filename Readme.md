@@ -3,12 +3,13 @@
 TheStripesNFT
 TheStripesNFT.sol is a smart contract deployed on the Ethereum-compatible blockchain, enabling the creation of an NFT collection with specific parameters for cost, max supply, and minting limits per wallet.
 
+```bash
 Contract Details
 uint256 public cost = 0.005 ether;
 uint256 public presaleCost = 0.003 ether;
 uint256 public maxSupply = 18;
 uint256 public maxMintAmount = 50;
-
+```
 Key Variables
 
 Cost: 0.005 ether - The cost for each NFT.
@@ -20,9 +21,10 @@ Deployment Instructions
 Set Initial Supply:
 
 The initial supply of NFTs will be set to a specific number on deployment. In the constructor, the line:
-solidity
-Copy code
+
+```bash
 mint(msg.sender, 18);
+```
 Change 18 to the desired number of NFTs to mint initially.
 Deploying TheStripesNFT.sol
 
