@@ -2,9 +2,9 @@
 
 ## TheStripesNFT
  TheStripesNFT.sol is a smart contract deployed on the Ethereum-compatible blockchain, enabling the creation of an NFT collection with specific parameters for cost, max supply, and minting limits per wallet.
-
-```bash
 Contract Details
+```bash
+
 uint256 public cost = 0.005 ether;
 uint256 public presaleCost = 0.003 ether;
 uint256 public maxSupply = 18;
@@ -12,10 +12,13 @@ uint256 public maxMintAmount = 50;
 ```
 ## Key Variables
 
-# Cost: 0.005 ether - The cost for each NFT.
-# Presale Cost: 0.003 ether - The cost for presale.
-# Max Supply: 18 - Maximum number of NFTs in this collection (can be modified based on the collection size).
-# Max Mint Amount: 50 - Maximum number of NFTs allowed per wallet.
+ Cost: 0.005 ether - The cost for each NFT.
+  
+Presale Cost: 0.003 ether - The cost for presale.
+
+Max Supply: 18 - Maximum number of NFTs in this collection (can be modified based on the collection size).
+  
+Max Mint Amount: 50 - Maximum number of NFTs allowed per wallet.
 
 ## Deployment Instructions
  Set Initial Supply:
@@ -29,9 +32,12 @@ Change 18 to the desired number of NFTs to mint initially.
 ## Deploying TheStripesNFT.sol
 
  Use Remix IDE for compiling and deploying the contract.
+ 
 Select Injected Web3 as the environment, ensuring Metamask is connected.
+
 Choose the desired network (e.g., Polygon, Ethereum mainnet, etc.) for deployment.
-Initialization Parameters
+
+# Initialization Parameters
 
 Before deploying, fill in these three fields:
 ```bash
@@ -40,6 +46,7 @@ _symbol: A short symbol for the NFT, e.g., "TNFT".
 _initBaseURI: Set this as ipfs://<your_cid>/ where <your_cid> is the CID of your JSON metadata file. Make sure it ends with a /.
 ```
 Once ready, click Transact to deploy the contract.
+
 Viewing Your Contract on the Blockchain
 
  After deployment, you can view your contract on the respective blockchain explorer, such as Polygonscan if deployed on Polygon.
@@ -49,7 +56,9 @@ Using the mint Function:
 
 ## Call the mint function and provide two parameters:
 Wallet Address: The address you want to mint NFTs to.
+
 Mint Amount: The number of NFTs to mint (up to the max of 50 per wallet).
+
 Gas Fees
 
 Be aware that gas fees will apply based on the network and number of NFTs being minted.
